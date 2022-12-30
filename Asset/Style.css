@@ -526,8 +526,113 @@ height: 314px;
 /* footer */
 
 .footer{
-    background-color: #cccccc;
+    background: #EFF2F6;
     width: 1442px;
-height: 419px;
-margin:auto;
+    height: 419px;
+    margin:auto;
+    margin-top: 75px;
+    display: flex;
+}
+
+.footer .info-kiri {
+    /* background-color: red; */
+    width: 401px;
+    margin-top: 35px;
+    margin-left: 195px;
+    
+}
+
+.footer .info-kiri h1{
+    color: #00B866;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.footer .info-kiri p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer .info-kiri form{
+    display: flex;
+    border: 1px solid #00B866;
+    width: 398px;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 23px;
+
+}
+.footer .info-kiri input{
+   
+    border: none;
+    background: none;
+   width: 300px;
+   margin-left: 20px;
+    
+}
+/* .footer .info-kiri ::placeholder{
+    color: #00B866;
+} */
+
+.footer .info-kiri button{
+    border: none;
+    background: none;
+    color: #00B866;
+    margin-right: 20px;
+    
+}
+
+.footer .shop {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 34px;
+    width: 190px;
+}
+
+.footer .shop h1{
+    font-weight: 600;
+font-size: 16px;
+color: #00B866;
+}
+
+.footer nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer nav a{
+    font-weight: 500;
+font-size: 16px;
+font-weight: bold;
+color: #111111;
+opacity: 0.5;
+}
+
+.footer .help {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 34px;
+    width: 190px;
+}
+
+.footer .help h1{
+    font-weight: 600;
+font-size: 16px;
+color: #00B866;
+}
+.footer .about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 34px;
+    width: 190px;
+}
+
+.footer .about h1{
+    font-weight: 600;
+font-size: 16px;
+color: #00B866;
 }
