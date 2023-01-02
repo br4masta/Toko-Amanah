@@ -202,13 +202,19 @@ width: 439px;
     margin-top: 26px;
 }
 
+.banner .informasi .button:hover{
+    background-color: #C2C0C0;
+}
+
 .banner .informasi a{
     font-weight: 600;
     font-size: 20px;
     color: #00B866;
    
 }
-
+/* .banner .informasi .button:hover a, .banner .informasi .button.hover a{
+   color: #111111;
+} */
 .banner .tombol-kanan{
     background-color: #cccccc;
     width: 24px;
@@ -230,6 +236,7 @@ width: 439px;
 }
 
 .banner-iklan .konten-kiri{
+    position: relative;
     background: #EAEBED;
     background: url(img/bg\ 1.png);
     width: 370px;
@@ -240,18 +247,44 @@ width: 439px;
     align-items: flex-end;
 }
 
+.banner-iklan .konten-kiri:hover::before {
+    content: '';
+    background:#111111;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
 
 .banner-iklan .konten-kiri .wrap{
     margin-right: 43px;
+    position: absolute;
 }
 
-.banner-iklan .konten-kiri a{
+.banner-iklan .konten-kiri h1{
+    
     font-weight: 700;
     font-size: 40px;
     color: black;
 }
 
+.banner-iklan .konten-kiri:hover h1, .banner-iklan .konten-kiri.hover h1{
+    /* position: absolute; */
+    color: #FFFFFF;
+
+}
+
 .banner-iklan .konten-kiri .button{
+   
+    grid-area: button; 
+    font-size: 100px;
+    display: none;
     background: #00B866;
     width: 93.82px;
     height: 29px;
@@ -260,7 +293,13 @@ width: 439px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    opacity: 0;
+
+}
+
+.banner-iklan .konten-kiri:hover .button, .banner-iklan .konten-kiri.hover .button{
+   
+    opacity: 1;
 
 }
 
@@ -274,6 +313,7 @@ width: 439px;
 
 
 .banner-iklan .konten-tengah{
+    position: relative;
     background-color: #6b6b6b;
     /* background: url(img/book.png); */
     background: linear-gradient(268.63deg, rgba(96, 90, 90, 0.5) -15.56%, rgba(0, 0, 0, 0) 92.32%), url(img/book.png), #D9D9D9;
@@ -284,9 +324,23 @@ width: 439px;
     justify-content: center;
     align-items: flex-end;
 }
+.banner-iklan .konten-tengah:hover::before {
+    content: '';
+    background:#111111;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
 
 .banner-iklan .konten-tengah .wrap{
     margin-right: 17px;
+    position: absolute;
 }
 
 .banner-iklan .konten-tengah #label{
@@ -296,6 +350,11 @@ width: 439px;
     width: 130px;
     color: #FFFFFF;
     margin-bottom: 10px;
+}
+.banner-iklan .konten-tengah:hover label, .banner-iklan .konten-tengah.hover label{
+    /* position: absolute; */
+    color: #FFFFFF;
+
 }
 
 .banner-iklan .konten-tengah .button{
@@ -308,8 +367,14 @@ width: 439px;
     align-items: center;
     justify-content: center;
     margin: auto;
+    opacity: 0;
 
 }
+.banner-iklan .konten-tengah:hover .button, .banner-iklan .konten-tengah.hover .button{
+    opacity: 1;
+
+}
+
 
 .banner-iklan .konten-tengah .button a{
     font-weight: 600;
@@ -320,6 +385,7 @@ width: 439px;
 }
 
 .banner-iklan .konten-kanan{
+    position: relative;
     background-color: #6b6b6b;
     background: url(img/Frame\ 758530697honey.png);
     width: 370px;
@@ -329,9 +395,23 @@ width: 439px;
     justify-content: center;
     align-items: flex-end;
 }
+.banner-iklan .konten-kanan:hover::before {
+    content: '';
+    background:#111111;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
 
 .banner-iklan .konten-kanan .wrap{
     margin-right: 17px;
+    position: absolute;
 }
 
 .banner-iklan .konten-kanan #label{
@@ -353,6 +433,10 @@ width: 439px;
     align-items: center;
     justify-content: center;
     margin: auto;
+    opacity: 0;
+}
+.banner-iklan .konten-kanan:hover .button, .banner-iklan .konten-kanan.hover .button{
+    opacity: 1;
 
 }
 
@@ -473,6 +557,61 @@ width: 439px;
 height: 206px;
 }
 
+.produk-atas .gambar {
+    position: relative;
+    width: 189px;
+    height: 209px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+
+.produk-atas .gambar img{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.produk-atas .gambar:hover:after{
+    content: '';
+    background:#111111;
+    right: 0;
+    top: 0;
+    opacity: 0.7;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* .produk-atas .produk1 .gambar:hover img, .produk-atas .produk1 .gambar.hover img{
+    opacity: 0;
+} */
+
+
+.produk-atas .gambar a{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* left: 50%; */
+    top:50%;
+    opacity: 0;
+}
+
+.produk-atas .produk1 .gambar:hover a, .produk-atas .produk1 .gambar.hover a{
+    opacity: 1;
+    color: #C2C0C0;
+}
+
 .produk h1{
 
     font-family: 'Inter';
@@ -487,6 +626,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 }
+
 
 .produk a{
 color: #00B866;
@@ -635,4 +775,53 @@ color: #00B866;
     font-weight: 600;
 font-size: 16px;
 color: #00B866;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 910px) {
+    header, footer {
+        padding: 16px 32px;
+    }
+
+    section {
+        padding: 64px 32px;
+    }
+
+    #landing {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #landing > div {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about > div {
+        width: 100%;
+    }
+
+    .service-detail {
+        gap: 16px;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 64px;
+    }
+
+    .contact-detail form, .contact-detail > div {
+        width: 100%;
+    }
 }
