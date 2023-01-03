@@ -590,6 +590,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+   
 }
 
 /* .produk-atas .produk1 .gambar:hover img, .produk-atas .produk1 .gambar.hover img{
@@ -605,11 +606,13 @@ align-items: center;
     /* left: 50%; */
     top:50%;
     opacity: 0;
+    
 }
 
-.produk-atas .produk1 .gambar:hover a, .produk-atas .produk1 .gambar.hover a{
+.produk-atas .gambar:hover a, .produk-atas .gambar.hover a{
     opacity: 1;
-    color: #C2C0C0;
+    color: #00B866;
+    z-index: 1;
 }
 
 .produk h1{
@@ -658,6 +661,59 @@ height: 314px;
     text-align: center;
 }
 
+.produk-bawah .gambar {
+    position: relative;
+    width: 189px;
+    height: 209px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+
+.produk-bawah .gambar img{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.produk-bawah .gambar:hover:after{
+    content: '';
+    background:#111111;
+    right: 0;
+    top: 0;
+    opacity: 0.7;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.produk-bawah .gambar a{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* left: 50%; */
+    top:50%;
+    opacity: 0;
+    
+}
+
+
+.produk-bawah .gambar:hover a, .produk-bawah .gambar.hover a{
+    opacity: 1;
+    color: #00B866;
+    z-index: 1;
+}
 .produk-bawah img{
     width: 189px;
     height: 206px;

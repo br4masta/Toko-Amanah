@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Coder"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Toko-Amanah"
+	}
+}
