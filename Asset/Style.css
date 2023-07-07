@@ -33,7 +33,9 @@ header {
 .container{
     max-width: 1500px;
 }
-
+.navbar{
+    background: #00B866;
+}
 .navbar .nav-wrapper{
     background: #00B866;
     position: relative;
