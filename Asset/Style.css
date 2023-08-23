@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-:root{
-    --main-color : #00B866;
-    --second-color : #FFA451;
-    --body-color : #FFFFFF;
+:root {
+    --main-color: #00B866;
+    --second-color: #FFA451;
+    --body-color: #FFFFFF;
 
     --main-font: 'Inter', sans-serif;
-    --heading-font : 'Raleway', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
 }
 
 
-body{
+body {
     background-color: var(--body-color);
     font-family: var(--main-font);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,13 +30,15 @@ header {
 
 
 
-.container{
+.container {
     max-width: 1500px;
 }
-.navbar{
+
+.navbar {
     background: #00B866;
 }
-.navbar .nav-wrapper{
+
+.navbar .nav-wrapper {
     background: #00B866;
     position: relative;
     margin: auto;
@@ -47,27 +49,28 @@ header {
     height: 61px;
 }
 
-.navbar .nav-wrapper .pendaftaran a{
+.navbar .nav-wrapper .pendaftaran a {
     font-size: 18px;
     color: #FFFFFF;
 
 }
 
-.navbar .nav-wrapper .pendaftaran .login{
+.navbar .nav-wrapper .pendaftaran .login {
 
     margin-right: 41px;
 }
-.navbar .nav-wrapper .pendaftaran .Register{
+
+.navbar .nav-wrapper .pendaftaran .Register {
 
     margin-right: 75px;
-    }
+}
 
-    /* section header */
+/* section header */
 
-    .content-header{
-        /* background-color: red; */
-        width: 1200px;
-        height: 90px;
+.content-header {
+    /* background-color: red; */
+    width: 1200px;
+    height: 90px;
     border: 1px solid #00B866;
     margin: auto;
     margin-top: 34px;
@@ -75,50 +78,54 @@ header {
     display: flex;
     align-items: center;
 }
-.content-header .logo{
+
+.content-header .logo {
     display: flex;
     align-items: center;
     margin-left: 109px;
 }
 
-.content-header .logo a{
+.content-header .logo a {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: black;
 }
 
-.content-header .logo img{
+.content-header .logo img {
     width: 60px;
     height: 45.3px;
 }
 
-.content-header .nav{
-/* background-color: #cccccc; */
-display: flex;
-align-items: center;
-gap: 47px;
-margin-left: 149px;
+.content-header .nav {
+    /* background-color: #cccccc; */
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    margin-left: 149px;
 }
 
-.content-header .nav a{
+.content-header .nav a {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 28px;
-color: #00B866;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #00B866;
 }
-.content-header .nav .product{
-    display: flex;
-    align-items: center;
-}
-.content-header .nav .more{
+
+.content-header .nav .product {
     display: flex;
     align-items: center;
 }
 
-.content-header .search{
+.content-header .nav .more {
+    display: flex;
+    align-items: center;
+}
+
+.content-header .search {
     width: 44px;
     height: 46px;
     /* background-color: #00B866; */
@@ -126,7 +133,7 @@ color: #00B866;
     margin-right: 25px;
 }
 
-.content-header .keranjang{
+.content-header .keranjang {
     width: 188px;
     height: 90px;
     background-color: #00B866;
@@ -135,64 +142,66 @@ color: #00B866;
     justify-content: center;
 }
 
-.keranjang a{
+.keranjang a {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 28px;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
 }
 
 /* box iklan */
 
-.banner{
+.banner {
     background: linear-gradient(250.51deg, #00B866 45.95%, rgba(38, 142, 96, 0.94) 83.06%);
     width: 1200px;
     height: 482px;
     margin: auto;
-    margin-top: 36px;;
+    margin-top: 36px;
+    ;
 
     display: flex;
 }
 
-.banner .tombol-kiri{
+.banner .tombol-kiri {
     background-color: #cccccc;
     width: 24px;
     height: 24px;
     margin-left: 42px;
     margin-top: 223px;
 }
-.banner .gambar-iklan img{
+
+.banner .gambar-iklan img {
     align-items: center;
 }
 
-.banner .informasi{
-margin-top: 117px;
-width: 439px;
+.banner .informasi {
+    margin-top: 117px;
+    width: 439px;
 
 }
 
-.banner .informasi h1{
+.banner .informasi h1 {
     font-weight: 700;
     font-size: 96px;
     color: #FFFFFF;
 }
 
 
-.banner .informasi p{
+.banner .informasi p {
     font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
 }
 
-.banner .informasi p{
+.banner .informasi p {
     font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
 }
 
-.banner .informasi .button{
+.banner .informasi .button {
     background-color: #FFFFFF;
     width: 188px;
     height: 58.11px;
@@ -204,20 +213,21 @@ width: 439px;
     margin-top: 26px;
 }
 
-.banner .informasi .button:hover{
+.banner .informasi .button:hover {
     background-color: #C2C0C0;
 }
 
-.banner .informasi a{
+.banner .informasi a {
     font-weight: 600;
     font-size: 20px;
     color: #00B866;
-   
+
 }
+
 /* .banner .informasi .button:hover a, .banner .informasi .button.hover a{
    color: #111111;
 } */
-.banner .tombol-kanan{
+.banner .tombol-kanan {
     background-color: #cccccc;
     width: 24px;
     height: 24px;
@@ -227,7 +237,7 @@ width: 439px;
 
 /* Banner iklan */
 
-.banner-iklan{
+.banner-iklan {
     /* background-color: #cccccc; */
     width: 1200px;
     height: 273px;
@@ -237,7 +247,7 @@ width: 439px;
     justify-content: space-between;
 }
 
-.banner-iklan .konten-kiri{
+.banner-iklan .konten-kiri {
     position: relative;
     background: #EAEBED;
     background: url(img/bg\ 1.png);
@@ -251,7 +261,7 @@ width: 439px;
 
 .banner-iklan .konten-kiri:hover::before {
     content: '';
-    background:#111111;
+    background: #111111;
     opacity: 0.7;
     position: absolute;
     width: 100%;
@@ -260,31 +270,32 @@ width: 439px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    
+
 }
 
 
-.banner-iklan .konten-kiri .wrap{
+.banner-iklan .konten-kiri .wrap {
     margin-right: 43px;
     position: absolute;
 }
 
-.banner-iklan .konten-kiri h1{
-    
+.banner-iklan .konten-kiri h1 {
+
     font-weight: 700;
     font-size: 40px;
     color: black;
 }
 
-.banner-iklan .konten-kiri:hover h1, .banner-iklan .konten-kiri.hover h1{
+.banner-iklan .konten-kiri:hover h1,
+.banner-iklan .konten-kiri.hover h1 {
     /* position: absolute; */
     color: #FFFFFF;
 
 }
 
-.banner-iklan .konten-kiri .button{
-   
-    grid-area: button; 
+.banner-iklan .konten-kiri .button {
+
+    grid-area: button;
     font-size: 100px;
     display: none;
     background: #00B866;
@@ -299,13 +310,14 @@ width: 439px;
 
 }
 
-.banner-iklan .konten-kiri:hover .button, .banner-iklan .konten-kiri.hover .button{
-   
+.banner-iklan .konten-kiri:hover .button,
+.banner-iklan .konten-kiri.hover .button {
+
     opacity: 1;
 
 }
 
-.banner-iklan .konten-kiri .button a{
+.banner-iklan .konten-kiri .button a {
     font-weight: 600;
     font-size: 12px;
     color: #FFFFFF;
@@ -314,7 +326,7 @@ width: 439px;
 }
 
 
-.banner-iklan .konten-tengah{
+.banner-iklan .konten-tengah {
     position: relative;
     background-color: #6b6b6b;
     /* background: url(img/book.png); */
@@ -326,9 +338,10 @@ width: 439px;
     justify-content: center;
     align-items: flex-end;
 }
+
 .banner-iklan .konten-tengah:hover::before {
     content: '';
-    background:#111111;
+    background: #111111;
     opacity: 0.7;
     position: absolute;
     width: 100%;
@@ -337,15 +350,15 @@ width: 439px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    
+
 }
 
-.banner-iklan .konten-tengah .wrap{
+.banner-iklan .konten-tengah .wrap {
     margin-right: 17px;
     position: absolute;
 }
 
-.banner-iklan .konten-tengah #label{
+.banner-iklan .konten-tengah #label {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -353,13 +366,15 @@ width: 439px;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
-.banner-iklan .konten-tengah:hover label, .banner-iklan .konten-tengah.hover label{
+
+.banner-iklan .konten-tengah:hover label,
+.banner-iklan .konten-tengah.hover label {
     /* position: absolute; */
     color: #FFFFFF;
 
 }
 
-.banner-iklan .konten-tengah .button{
+.banner-iklan .konten-tengah .button {
     background: #00B866;
     width: 93.82px;
     height: 29px;
@@ -372,13 +387,15 @@ width: 439px;
     opacity: 0;
 
 }
-.banner-iklan .konten-tengah:hover .button, .banner-iklan .konten-tengah.hover .button{
+
+.banner-iklan .konten-tengah:hover .button,
+.banner-iklan .konten-tengah.hover .button {
     opacity: 1;
 
 }
 
 
-.banner-iklan .konten-tengah .button a{
+.banner-iklan .konten-tengah .button a {
     font-weight: 600;
     font-size: 12px;
     color: #FFFFFF;
@@ -386,7 +403,7 @@ width: 439px;
 
 }
 
-.banner-iklan .konten-kanan{
+.banner-iklan .konten-kanan {
     position: relative;
     background-color: #6b6b6b;
     background: url(img/Frame\ 758530697honey.png);
@@ -397,9 +414,10 @@ width: 439px;
     justify-content: center;
     align-items: flex-end;
 }
+
 .banner-iklan .konten-kanan:hover::before {
     content: '';
-    background:#111111;
+    background: #111111;
     opacity: 0.7;
     position: absolute;
     width: 100%;
@@ -408,15 +426,15 @@ width: 439px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    
+
 }
 
-.banner-iklan .konten-kanan .wrap{
+.banner-iklan .konten-kanan .wrap {
     margin-right: 17px;
     position: absolute;
 }
 
-.banner-iklan .konten-kanan #label{
+.banner-iklan .konten-kanan #label {
     font-weight: 700;
     font-size: 40px;
     text-align: center;
@@ -425,7 +443,7 @@ width: 439px;
     /* margin-bottom: 10px; */
 }
 
-.banner-iklan .konten-kanan .button{
+.banner-iklan .konten-kanan .button {
     background: #00B866;
     width: 93.82px;
     height: 29px;
@@ -437,12 +455,14 @@ width: 439px;
     margin: auto;
     opacity: 0;
 }
-.banner-iklan .konten-kanan:hover .button, .banner-iklan .konten-kanan.hover .button{
+
+.banner-iklan .konten-kanan:hover .button,
+.banner-iklan .konten-kanan.hover .button {
     opacity: 1;
 
 }
 
-.banner-iklan .konten-kanan .button a{
+.banner-iklan .konten-kanan .button a {
     font-weight: 600;
     font-size: 12px;
     color: #FFFFFF;
@@ -451,7 +471,7 @@ width: 439px;
 }
 
 /* label */
-.label{
+.label {
     /* background-color: #00B866; */
     margin: auto;
     margin-top: 36px;
@@ -463,8 +483,8 @@ width: 439px;
 }
 
 /* categories */
-.pilih-categories{
-   
+.pilih-categories {
+
     margin: auto;
     width: 333px;
     height: 25px;
@@ -474,68 +494,78 @@ width: 439px;
     margin-top: 16px;
 }
 
-.pilih-categories .all{
+.pilih-categories .all {
 
     background-color: #00B866;
     width: 51px;
     height: 25px;
     border-radius: 30px;
     text-align: center;
-    
+
 }
 
-.pilih-categories .all a{
-
+.pilih-categories .all a {
+    text-decoration: unset !important;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 12px;
+
 }
 
-.pilih-categories .cloth{
+.pilih-categories .cloth {
 
     border: 1px solid #00B866;
     width: 82px;
     height: 25px;
     border-radius: 30px;
     text-align: center;
-    
+
 }
 
-.pilih-categories .cloth a{
+.pilih-categories .cloth a {
 
     color: #00B866;
     font-weight: 500;
     font-size: 12px;
 }
 
-.pilih-categories .books{
+.pilih-categories .books {
 
     border: 1px solid #00B866;
     width: 82px;
     height: 25px;
     border-radius: 30px;
     text-align: center;
-    
+
 }
 
-.pilih-categories .books a{
+.pilih-categories .books a {
 
     color: #00B866;
     font-weight: 500;
     font-size: 12px;
 }
-.pilih-categories .herbal{
+
+.pilih-categories .herbal {
 
     border: 1px solid #00B866;
     width: 82px;
     height: 25px;
     border-radius: 30px;
     text-align: center;
-    
+
 }
 
-.pilih-categories .herbal a{
+.pilih-categories .herbal a {
 
+    color: #00B866;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pilih-categories :not(.all) a {
+
+    text-decoration: unset !important;
     color: #00B866;
     font-weight: 500;
     font-size: 12px;
@@ -543,8 +573,8 @@ width: 439px;
 
 /* Produk */
 
-.produk-atas{
-    
+.produk-atas {
+
     width: 843px;
     height: 314px;
     display: flex;
@@ -554,9 +584,9 @@ width: 439px;
     margin-top: 34px;
 }
 
-.produk-atas img{
+.produk-atas img {
     width: 189px;
-height: 206px;
+    height: 206px;
 }
 
 .produk-atas .gambar {
@@ -570,18 +600,18 @@ height: 206px;
 
 
 
-.produk-atas .gambar img{
-position: absolute;
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
+.produk-atas .gambar img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
 }
 
-.produk-atas .gambar:hover:after{
+.produk-atas .gambar:hover:after {
     content: '';
-    background:#111111;
+    background: #111111;
     right: 0;
     top: 0;
     opacity: 0.7;
@@ -592,7 +622,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-   
+
 }
 
 /* .produk-atas .produk1 .gambar:hover img, .produk-atas .produk1 .gambar.hover img{
@@ -600,24 +630,25 @@ align-items: center;
 } */
 
 
-.produk-atas .gambar a{
+.produk-atas .gambar a {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
     /* left: 50%; */
-    top:50%;
+    top: 50%;
     opacity: 0;
-    
+
 }
 
-.produk-atas .gambar:hover a, .produk-atas .gambar.hover a{
+.produk-atas .gambar:hover a,
+.produk-atas .gambar.hover a {
     opacity: 1;
     color: #00B866;
     z-index: 1;
 }
 
-.produk h1{
+.produk h1 {
 
     font-family: 'Inter';
     font-style: normal;
@@ -627,34 +658,34 @@ align-items: center;
 
 .produk p {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 
-.produk a{
-color: #00B866;
-font-weight: 700;
-font-size: 16px;
+.produk a {
+    color: #00B866;
+    font-weight: 700;
+    font-size: 16px;
 
-/* margin-top: 36px; */
+    /* margin-top: 36px; */
 }
 
-.produk-atas div{
-width: 189px;
-height: 314px; 
-
-}
-
-.produk-bawah div{
+.produk-atas div {
     width: 189px;
-    height: 314px; 
-    
-    }
+    height: 314px;
 
-.produk-bawah{
-    
+}
+
+.produk-bawah div {
+    width: 189px;
+    height: 314px;
+
+}
+
+.produk-bawah {
+
     width: 843px;
     height: 314px;
     display: flex;
@@ -674,18 +705,18 @@ height: 314px;
 
 
 
-.produk-bawah .gambar img{
-position: absolute;
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
+.produk-bawah .gambar img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
 }
 
-.produk-bawah .gambar:hover:after{
+.produk-bawah .gambar:hover:after {
     content: '';
-    background:#111111;
+    background: #111111;
     right: 0;
     top: 0;
     opacity: 0.7;
@@ -696,38 +727,40 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-   
+
 }
 
-.produk-bawah .gambar a{
+.produk-bawah .gambar a {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
     /* left: 50%; */
-    top:50%;
+    top: 50%;
     opacity: 0;
-    
+
 }
 
 
-.produk-bawah .gambar:hover a, .produk-bawah .gambar.hover a{
+.produk-bawah .gambar:hover a,
+.produk-bawah .gambar.hover a {
     opacity: 1;
     color: #00B866;
     z-index: 1;
 }
-.produk-bawah img{
+
+.produk-bawah img {
     width: 189px;
     height: 206px;
 }
 
 /* footer */
 
-.footer{
+.footer {
     background: #EFF2F6;
     width: 1442px;
     height: 419px;
-    margin:auto;
+    margin: auto;
     margin-top: 75px;
     display: flex;
 }
@@ -737,22 +770,22 @@ align-items: center;
     width: 401px;
     margin-top: 35px;
     margin-left: 195px;
-    
+
 }
 
-.footer .info-kiri h1{
+.footer .info-kiri h1 {
     color: #00B866;
     font-weight: 600;
     font-size: 36px;
 }
 
-.footer .info-kiri p{
+.footer .info-kiri p {
     font-weight: 400;
     font-size: 14px;
     margin-top: 10px;
 }
 
-.footer .info-kiri form{
+.footer .info-kiri form {
     display: flex;
     border: 1px solid #00B866;
     width: 398px;
@@ -761,24 +794,26 @@ align-items: center;
     margin-top: 23px;
 
 }
-.footer .info-kiri input{
-   
+
+.footer .info-kiri input {
+
     border: none;
     background: none;
-   width: 300px;
-   margin-left: 20px;
-    
+    width: 300px;
+    margin-left: 20px;
+
 }
+
 /* .footer .info-kiri ::placeholder{
     color: #00B866;
 } */
 
-.footer .info-kiri button{
+.footer .info-kiri button {
     border: none;
     background: none;
     color: #00B866;
     margin-right: 20px;
-    
+
 }
 
 .footer .shop {
@@ -789,23 +824,23 @@ align-items: center;
     width: 190px;
 }
 
-.footer .shop h1{
+.footer .shop h1 {
     font-weight: 600;
-font-size: 16px;
-color: #00B866;
+    font-size: 16px;
+    color: #00B866;
 }
 
-.footer nav{
+.footer nav {
     display: flex;
     flex-direction: column;
 }
 
-.footer nav a{
+.footer nav a {
     font-weight: 500;
-font-size: 16px;
-font-weight: bold;
-color: #111111;
-opacity: 0.5;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    opacity: 0.5;
 }
 
 .footer .help {
@@ -816,11 +851,12 @@ opacity: 0.5;
     width: 190px;
 }
 
-.footer .help h1{
+.footer .help h1 {
     font-weight: 600;
-font-size: 16px;
-color: #00B866;
+    font-size: 16px;
+    color: #00B866;
 }
+
 .footer .about {
     display: flex;
     flex-direction: column;
@@ -829,16 +865,26 @@ color: #00B866;
     width: 190px;
 }
 
-.footer .about h1{
+.footer .about h1 {
     font-weight: 600;
-font-size: 16px;
-color: #00B866;
+    font-size: 16px;
+    color: #00B866;
+}
+
+.addchart {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: unset !important;
 }
 
 /* responsive */
 
 @media only screen and (max-width: 910px) {
-    header, footer {
+
+    header,
+    footer {
         padding: 16px 32px;
     }
 
@@ -853,7 +899,7 @@ color: #00B866;
         text-align: center;
     }
 
-    #landing > div {
+    #landing>div {
         width: 100%;
     }
 
@@ -864,7 +910,7 @@ color: #00B866;
         align-items: center;
     }
 
-    #about > div {
+    #about>div {
         width: 100%;
     }
 
@@ -879,7 +925,8 @@ color: #00B866;
         row-gap: 64px;
     }
 
-    .contact-detail form, .contact-detail > div {
+    .contact-detail form,
+    .contact-detail>div {
         width: 100%;
     }
 }

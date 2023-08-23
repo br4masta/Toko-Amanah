@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,54 @@
     <title>Toko Amanah</title>
     <link rel="stylesheet" href="Asset/Style.css">
     <link rel="stylesheet" href="Asset/Style.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="include/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-    
+
     <header></header>
     <section class="header">
 
         <div class="content-header">
-            
-                <div class="logo">
-                    <img src="Asset/img/logo toko amanah.png" alt="">
-                    <a href="#">Toko Amanah</a>
+
+            <div class="logo">
+                <img src="Asset/img/logo toko amanah.png" alt="">
+                <a href="#">Toko Amanah</a>
+            </div>
+
+            <nav class="nav">
+                <a href="">Home</a>
+                <div class="product">
+                    <a href="">Product</a>
+                    <img src="Asset/img/Iconswipe.png" alt="">
                 </div>
-               
-                <nav class="nav"> 
-                    <a href="">Home</a>
-                    <div class="product">
-                        <a href="">Product</a>
-                        <img src="Asset/img/Iconswipe.png" alt="">
-                    </div>
-                    <a href="">wishlist</a>
-                    <div class="more">
-                        <a href="">more</a>
-                        <img src="Asset/img/Iconswipe.png" alt="">
-                    </div>
-                </nav>
-                   
-                <div class="search">
-                    <img src="Asset/img/Searchsearch.png" alt="">
+                <a href="">wishlist</a>
+                <div class="more">
+                    <a href="">more</a>
+                    <img src="Asset/img/Iconswipe.png" alt="">
                 </div>
-                <div class="keranjang">
-                    <img src="Asset/img/Vectorkeranjang.png" alt="">
-                    <a href="">Cart</a>
-                </div>
-            
-           
+            </nav>
+
+            <div class="search">
+                <img src="Asset/img/Searchsearch.png" alt="">
+            </div>
+            <div class="keranjang" style="position: relative;">
+                <img src="Asset/img/Vectorkeranjang.png" alt="">
+                <a href="">Cart</a>
+                <span id="indexChart"
+                    style="position:absolute; color: white; background-color: red; border-radius: 20px; width: 25px; text-align: center; border-color: red; top: 14px; "
+                    hidden>0</span>
+            </div>
+
+
         </div>
     </section>
 
@@ -57,10 +69,10 @@
             </div>
             <div class="informasi">
                 <h1>PROMO</h1>
-                <p>Diskon 50% dengan minimal 
+                <p>Diskon 50% dengan minimal
                     belanja hanya Rp50.000.</p>
                 <div class="button">
-                    <a  href=""> Pesan </a>
+                    <a href=""> Pesan </a>
                 </div>
             </div>
             <div class="tombol-kanan">
@@ -75,7 +87,7 @@
                 <div class="wrap">
                     <h1>Hijab</h1>
                     <div class="button">
-                        <a href="" >Buy now</a>
+                        <a href="">Buy now</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +98,7 @@
                         <a href="">Buy now</a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="konten-kanan">
                 <div class="wrap">
@@ -97,125 +109,145 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <div class="label">Product Categories</div>
 
     <section>
         <div class="pilih-categories">
-            <div class="all">
+            <div class="all pilihClass" data-value="all">
                 <a href="">All</a>
             </div>
-            <div class="cloth">
+            <div class="cloth pilihClass" data-value="cloth">
                 <a href=""> Cloth</a>
             </div>
-            <div class="books">
+            <div class="books pilihClass" data-value="books">
                 <a href="">
                     Books
                 </a>
             </div>
-            <div class="herbal">
+            <div class="herbal pilihClass" data-value="herbal">
                 <a href="">Herb</a>
             </div>
         </div>
     </section>
-    
+
     <section>
         <div class="produk">
 
             <div class="produk-atas">
-                <div class="produk1">
-                    <div class="gambar"> 
-                        <img src="Asset/img/orange.png" alt="baju-orange">
-                        <a href="">Add to cart</a> 
+                <div class="produk-wrap">
+                    <div class="gambar">
+                        <img src="Asset/img/orange.png" alt="baju-orange" class="cloth">
+                        <a class="addchart" data-value="baju-orange">Add to cart</a>
                     </div>
                     <h1>Baju Muslim Orange</h1>
                     <p>Rp 80.000</p>
-                    
-                    
+
+
                 </div>
-                <div class="produk2">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/baju koko.png" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/baju koko.png" alt="" class="cloth">
+                        <a class="addchart" data-value="baju-koko">Add to cart</a>
                     </div>
-                    
+
                     <h1>Baju Koko</h1>
                     <p>Rp 80.000</p>
-                   
+
                 </div>
-                <div class="produk3">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/baju biru.png" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/baju biru.png" alt="" class="cloth">
+                        <a class="addchart" data-value="baju-biru">Add to cart</a>
                     </div>
-                   
+
                     <h1>Baju Muslim Biru</h1>
                     <p>Rp 80.000</p>
-                   
+
                 </div>
-                <div class="produk4">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/baju muslim krem.png" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/baju muslim krem.png" alt="" class="cloth">
+                        <a class="addchart" data-value="baju-muslim-krem">Add to cart</a>
                     </div>
-                    
+
                     <h1>Baju Muslim krem</h1>
                     <p>Rp 80.000</p>
 
                 </div>
             </div>
             <div class="produk-bawah">
-                <div class="produk1">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/herbal.jpg" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/herbal.jpg" alt="" class="herbal">
+                        <a class="addchart" data-value="herbal">Add to cart</a>
                     </div>
-                   
+
                     <h1>Honey Herbal</h1>
                     <p>Rp 80.000</p>
-                 
+
                 </div>
-                <div class="produk2">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/Milk and honey.jpg" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/Milk and honey.jpg" alt="" class="books">
+                        <a class="addchart" data-value="Milk and honey">Add to cart</a>
                     </div>
-                   
+
                     <h1>Milk And Honey</h1>
                     <p>Rp 80.000</p>
-                    
+
                 </div>
-                <div class="produk3">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/buku.jpg" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/buku.jpg" alt="" class="books">
+                        <a class="addchart" data-value="buku">Add to cart</a>
                     </div>
-                    
-                    <h1>101 Essay that will 
-                        CHANGE the way YOU 
+
+                    <h1>101 Essay that will
+                        CHANGE the way YOU
                         THINK</h1>
                     <p>Rp 80.000</p>
-                    
+
                 </div>
-                <div class="produk4">
+                <div class="produk-wrap">
                     <div class="gambar">
-                        <img src="Asset/img/teh.jpg" alt="">
-                        <a href="">Add to cart</a>
+                        <img src="Asset/img/teh.jpg" alt="" class="herbal">
+                        <a class="addchart" data-value="teh">Add to cart</a>
                     </div>
-                    
+
                     <h1>Tea Herbal</h1>
                     <p>Rp 80.000</p>
-                   
+
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <footer> </footer>
 
-<script src="main.js"></script>
+    <!-- Modal Confirm Apakah yakin mau di masukan ke keranjang? -->
+    <div class="modal" id="KonfirmasiModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Konfirmasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Masukan barang kekeranjang?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary noButton" data-bs-dismiss="modal">Tidak</button>
+                    <button type="button" class="btn btn-primary yesButton">YA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
