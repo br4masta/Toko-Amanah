@@ -494,9 +494,22 @@ header {
     margin-top: 16px;
 }
 
+.pilih-categories .active {
+    background-color: #00B866 !important;
+    color: white !important;
+}
+
+.pilih-categories .active a {
+
+    color: white !important;
+}
+
 .pilih-categories .all {
 
-    background-color: #00B866;
+    /* background-color: #00B866; */
+    background-color: white;
+    ;
+    border: 1px solid #00B866;
     width: 51px;
     height: 25px;
     border-radius: 30px;
@@ -506,7 +519,7 @@ header {
 
 .pilih-categories .all a {
     text-decoration: unset !important;
-    color: #FFFFFF;
+    color: #00B866;
     font-weight: 500;
     font-size: 12px;
 
@@ -578,7 +591,7 @@ header {
     width: 843px;
     height: 314px;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
     margin: auto;
     text-align: center;
     margin-top: 34px;
@@ -689,7 +702,7 @@ header {
     width: 843px;
     height: 314px;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
     margin: auto;
     text-align: center;
 }

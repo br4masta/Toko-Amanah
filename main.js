@@ -63,9 +63,32 @@ $(document).on("click", ".pilihClass", function (e) {
     let val = $(this).data('value');
     console.log(val)
 
-    $('.produk-wrap').prop('hidden', false)
-    $('.' + val + '').each(function () {
-        $(this).parents('.produk-wrap').prop('hidden', true)
-    })
+    // buat propertinya default hidden dan hapus class active ketika pertama kali klik plihClass
+    $('.produk-wrap').prop('hidden', true)
+    $('.pilihClass').removeClass('active')
+
+    //lalu tampilkan data sesuai kategori
+    if (val == 'all') {
+        $('.produk-wrap').prop('hidden', false)
+    } else {
+        $('.' + val + '').each(function () {
+            $(this).parents('.produk-wrap').prop('hidden', false)
+        })
+    }
+
+
+    $(this).addClass('active')//tambahkan class active pada kategori yang dipilih dan set warna menu sesuai kategori yang di pilih
+
+    // $('.produk-atas .produk-wrap').each(function () {
+    //     if ($(this).is(':hidden')) {
+    //         console.log('is hidden')
+    //         $(this).parents('.produk-atas').css('display', 'none')
+    //     } else {
+    //         console.log('brian')
+    //         $(this).parents('.produk-atas').css('display', 'flex')
+    //         return false;
+    //     }
+    // })
+
 
 });
