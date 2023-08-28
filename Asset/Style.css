@@ -589,12 +589,13 @@ header {
 .produk-atas {
 
     width: 843px;
-    height: 314px;
+    height: fit-content;
     display: flex;
-    gap: 40px;
+    gap: 29px;
     margin: auto;
     text-align: center;
     margin-top: 34px;
+    flex-wrap: wrap;
 }
 
 .produk-atas img {
